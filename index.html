@@ -6,6 +6,25 @@
   <title>Happy | Data Scientist & Frontend Developer</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
+<style>
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .problem-statement, .tech-stack, .title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+
+</style>
 <body>
   <header>
     <nav class="navbar">
@@ -41,9 +60,17 @@
   <div class="project-grid">
 
     <div class="project-card">
-      <h4>Titanic Survival Predictor</h4>
-      <p>A machine learning model predicting passenger survival chances using Scikit-learn and Pandas.</p>
-      <a href="assets/notebooks/EDA_titanic.html" target="_blank" class="project-link">🔗 View Notebook</a>
+      <a href="titanic-page.html">
+        <h4 class="title">Titanic Survival Predictor</h4>
+      <p class="problem-statement">A machine learning model predicting passenger survival chances using Scikit-learn and Pandas.</p>
+      <p class="tech-stack">Tech: Python, Pandas, Scikit-learn</p>
+      <div class="links">
+        <li><a href="live-demo" class="project-link">🔗 Live Demo</a></li>
+        <li><a href="Github" class="project-link">🔗 Github link</a></li>
+        <li><a href="assets/notebooks/EDA_titanic.html" target="_blank" class="project-link">🔗 View Notebook</a></li>
+      </div>
+      <!-- <a href="assets/notebooks/EDA_titanic.html" target="_blank" class="project-link">🔗 View Notebook</a> -->
+      </a>
     </div>
 
   <div class="project-card">

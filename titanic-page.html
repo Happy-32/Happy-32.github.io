@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy | Data Scientist & Frontend Developer</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<style>
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+
+}
+
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6 {
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin: 20px;
+    max-width: 1100;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+
+p {
+    margin-bottom: 20px;
+    width: 100%;
+    }
+
+.Deployment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .Deployment-grid { grid-template-columns: 1fr; }
+    }
+
+
+img { border-radius: 8px; }
+
+
+.screenshots { grid-area: 1 / 1 / 2 / 2; }
+.live-demo { grid-area: 2 / 1 / 3 / 2; }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+        <h1>Happy</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="parent">
+    <div class="section-1">
+        <h2 class="title">The Problem Statement</h2>
+        <p>Predicting survival on the Titanic is a classic machine learning problem that involves analyzing various passenger attributes to determine the likelihood of survival.</p>
+        <h3 class="tech-stack">Tech Stack Used</h3>
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Scikit-learn</li>
+        </ul>
+    </div>
+    <div class="section-2">
+        <h2 class="title">The Dataset</h2>
+        <p>The Titanic dataset contains information about the passengers aboard the Titanic, including features such as age, gender, ticket class, fare, and whether they survived or not. The dataset is divided into training and test sets.</p>
+        <h3>Features</h3>
+        <ul>
+            <li>PassengerId</li>
+            <li>Survived</li>
+            <li>Pclass</li>
+            <li>Name</li>
+            <li>Sex</li>
+            <li>Age</li>
+            <li>SibSp</li>
+            <li>Parch</li>
+            <li>Ticket</li>
+            <li>Fare</li>
+            <li>Cabin</li>
+            <li>Embarked</li>
+        </ul>
+    </div>
+    <div class="section-3">
+        <h2 class="title">The Approach</h2>
+        <p>The approach to building the Titanic Survival Predictor involved several key steps:</p>
+        <ul>
+            <li>Data Preprocessing: Handling missing values, encoding categorical variables, and feature scaling.</li>
+            <li>Exploratory Data Analysis (EDA): Analyzing the dataset to identify patterns and relationships between features and survival rates.</li>
+            <li>Model Selection: Choosing appropriate machine learning algorithms such as Logistic Regression, Decision Trees, and Random Forests.</li>
+            <li>Model Training: Training the selected models on the training dataset.</li>
+            <li>Model Evaluation: Evaluating model performance using metrics such as accuracy, precision, recall, and F1-score.</li>
+            <li>Hyperparameter Tuning: Optimizing model parameters to improve performance.</li>
+            <li>Final Model Selection: Selecting the best-performing model for deployment.</li>
+        </ul>
+    </div>
+    <div class="section-4">
+        <h2 class="title">The Results</h2>
+        <p>The Titanic Survival Predictor achieved an accuracy of approximately 80% on the test dataset. The Random Forest model outperformed other models, demonstrating its effectiveness in handling the complexities of the dataset. Key insights from the analysis included:</p>
+        <ul>
+            <li>Gender was a significant predictor of survival, with females having a higher survival rate.</li>
+            <li>Passengers in higher ticket classes had better survival chances.</li>
+            <li>Age and fare also played important roles in determining survival likelihood.</li>
+        </ul>
+    </div>
+    <div class="section-5">
+        <h2 class="title">Deployment</h2>
+        <p>The final model was deployed as a web application using Flask, allowing users to input passenger details and receive survival predictions. The application features a user-friendly interface and provides insights into the factors influencing survival chances.</p>
+        <div class="Deployment-grid">
+        <div class="screenshots">
+            <h2>Screenshots</h2>
+            <img src="assets/images/titanic_screenshot1.png" alt="Screenshot 1" style="width:100%; height:auto; margin-bottom:10px;">
+            <img src="assets/images/titanic_screenshot2.png" alt="Screenshot 2" style="width:100%; height:auto;">
+        </div>
+        <div class="live-demo">
+            <h2>Live Demo</h2>
+            <a href="live-demo-link" target="_blank">🔗 Access the Live Demo Here</a>
+        </div>
+</div>
+    </div>
+    <div class="section-6">
+        <h2 class="title">Conclusion and Lessons Learned</h2>
+        <p>The Titanic Survival Predictor project provided valuable insights into the application of machine learning techniques for classification tasks. Key lessons learned include the importance of thorough data preprocessing, the effectiveness of ensemble methods like Random Forests, and the significance of feature engineering in improving model performance. Future work could involve exploring additional features, experimenting with advanced algorithms, and enhancing the deployment process for better user experience.</p>
+        <h3 class="tech-stack">Tech Stack Used</h3>
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+    </div>
+</main>
+
+
+<section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate! Reach out for projects, research, or just a chat 👇</p>
+    <div class="socials">
+      <a href="mailto:happy@example.com">📧 Email</a>
+      <a href="https://github.com/happy-32" target="_blank">💻 GitHub</a>
+      <a href="www.linkedin.com/in/andrew-en-maari-yahaya-9002b0356" target="_blank">💼 LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Happy. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
