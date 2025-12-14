@@ -1,133 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy | Data Scientist & Frontend Developer</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        text-align: center;
-    }
-    h1 {
-        color: #333;
-        margin-top: 50px;
-    }
-    h2 {
-        color: #666;
-        margin-bottom: 50px;
-    }
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 500px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .middle-nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #007BFF;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .middle-nav a:hover {
-        text-decoration: underline;
-    }
-
-    .side-items {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .side-items img {
-        width: 400px;
-        height: 200px;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    footer {
-        margin-top: 50px;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    @media (max-width: 768px) {
-        .side-items {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        footer {
-        margin-top: 50px;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-        .side-items img {
-            width: 80%;
-            margin-bottom: 20px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .middle-nav a {
-            display: block;
-            margin: 10px 0;
-        }
-
-        footer {
-        margin-top: 50px;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-    }
-
-</style>
 <body>
-    <h1>DATA SCIENTIST</h1>
-    <h2>WEB DEVELOPER</h2>
+  <header>
+    <nav class="navbar">
+      <h1>Happy</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="hero">
-        <div class="side-items">
-            <img src="images/desktop.jpg" alt="">
-            <img src="images/desktop.jpg" alt="">
-            <img src="images/desktop.jpg" alt="">
-
-        </div>
-        <div class="middle-nav">
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Hey, I’m Happy 👋</h2>
+      <p>Data Scientist & Frontend Developer | Future Full Stack Engineer</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
     </div>
-    <footer>
-        <p>&copy; 2024 Andrew En-maari Yahaya. All rights reserved.</p>
-    </footer>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate Data Scientist and Frontend Developer who loves transforming raw data into powerful insights and beautiful, interactive web experiences. I’m currently learning backend systems to become a full-stack engineer.
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+  <h2>Projects</h2>
+
+  <!-- 🧠 Data Science Projects -->
+  <h3 class="subheading">Data Science Projects</h3>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h4>Titanic Survival Predictor</h4>
+      <p>A machine learning model predicting passenger survival chances using Scikit-learn and Pandas.</p>
+      <a href="assets/notebooks/EDA_titanic.html" target="_blank" class="project-link">🔗 View Notebook</a>
+    </div>
+
+  <div class="project-card">
+    <h4>Web Scraping & Data Analysis – British Airways Reviews</h4>
+    <p>
+      Collected and analyzed customer review data from Skytrax using BeautifulSoup. 
+      Performed exploratory data analysis (EDA) to uncover key satisfaction trends and visualize insights.
+    </p>
+    <a href="assets/notebooks/british_airways_Andrew.html" target="_blank" class="project-link">
+      🔗 View Notebook
+    </a>
+</div>
+
+
+    <div class="project-card">
+      <h4>Sales Forecast Dashboard</h4>
+      <p>Forecasting monthly sales using ARIMA and Prophet, visualized with Plotly and Dash.</p>
+      <a href="assets/notebooks/sales_forecast.html" target="_blank" class="project-link">🔗 View Notebook</a>
+    </div>
+
+  </div>
+
+  <!-- 💅 Web Development Projects -->
+  <h3 class="subheading">Web Development Projects</h3>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h4>Portfolio Website</h4>
+      <p>This very site! Built with HTML, CSS, and JavaScript, designed to grow into a full-stack app.</p>
+      <a href="#" class="project-link">🌐 Live Demo</a>
+    </div>
+
+    <div class="project-card">
+      <h4>Weather Forecast App</h4>
+      <p>Frontend web app that fetches real-time weather data using a public API.</p>
+      <a href="#" class="project-link">🌐 Live Demo</a>
+    </div>
+
+    <div class="project-card">
+      <h4>Interactive UI Components</h4>
+      <p>A mini front-end project exploring responsive layouts and animation effects using vanilla JS.</p>
+      <a href="#" class="project-link">🌐 View Project</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate! Reach out for projects, research, or just a chat 👇</p>
+    <div class="socials">
+      <a href="mailto:happy@example.com">📧 Email</a>
+      <a href="https://github.com/happy-32" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/happy" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Happy. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
